@@ -23,7 +23,7 @@ let channels = {
     "Resume":[
         '<h2><a class="link" target="_blank" href="https://docs.google.com/document/d/1X4ucaNnFKgA3Kagi_PBIr7B_dg8y4qgdT7mXaMCG27o/edit?usp=sharing">Document Link</a></h2>',
         '<h2>Jeven R. Shirrell</h2><p>jrslivingwaterstudios@gmail.com</p>',
-        '<h2>Skills</h2><p>- Web development<br>- Game development<br>- Music production<br>- Drumming</p>',
+        '<h2>Skills</h2><p>- Web development<br>- Game development<br>- Graphic Design<br>- Music production<br>- Drumming</p>',
         '<h2>Experience</h2><p><strong>Founder</strong> - AAA 3D Printing Solutions<br>January 2025 - July 2025<br>- Create and sell 3D printed products online<br>- Design and produce custom-ordered 3D printed items<br><br><p><strong>Junior High Coach</strong> - CCV Anthem<br>November 2025 - Present<br>- Challenge and lead 8th grade students to follow Christ<br><br><strong>Team Member</strong> - Shake Shack<br>July 2026 - Present<br>- Lead with genuine warmth and care for team members and guests<br>- Prepare and assemble food orders to Shake Shack standards</p>',
         '<h2>Certifications</h2><p><strong>PCEP – Certified Entry-Level Python Programmer</strong> - April 2026 <br><strong>Information Technology Specialist in HTML and CSS</strong> - April 2026 <br><strong>Information Technology Specialist in HTML5 Application Development</strong> - May 2026</p>',
         '<h2>Education</h2><p><strong>North Valley Christian Academy, Phoenix, AZ</strong> - High School Diploma (In Progress)<br>August 2023 - May 2026<br><br><strong>Sunrise Mountain High School, Peoria, AZ</strong> - High School Diploma (In Progress)<br>August 2026 - May 2027<br><br><strong>West-MEC Northeast Campus, Phoenix, AZ</strong><br>July 2025 - May 2027</p>',
