@@ -1,0 +1,21 @@
+@import url('./main.css');
+
+body, #wrapper {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* home button */
+.home {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.25rem;
+    background-color: var(--shade2) !important;
+    transition: background-color 150ms;
+}
+.home:hover {
+    background-color: color-mix(in srgb, var(--shade2), white 5%) !important;
+    cursor: pointer;
+}
