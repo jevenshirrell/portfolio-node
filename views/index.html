@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeven Shirrell</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/favicon/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="panel">
+        <div class="name panel">
+            <h2 class="headerFont">Jeven Shirrell</h2>
+        </div>
+        <div class="hero">
+            <img src="./imgs/banner.png" alt="" height="150px" width="300px">
+        </div>
+        <ul class="channelList panel">
+            <li class="channel card activeChannel" id="channel1">Home</li>
+            <li class="channel card" id="channel2">About Me</li>
+            <li class="channel card" id="channel3">Skills</li>
+            <li class="channel card" id="channel4">Projects</li>
+            <li class="channel card" id="channel5">Resume</li>
+            <li class="channel card" id="channel6">Contact</li>
+        </ul>
+        <div class="profile panel" id="miniProf">
+            <img src="./imgs/pfp.png" alt="Profile Picture" class="pfp">
+            <h3 class="headerFont">Jeven Shirrell</h3>
+        </div>
+    </header>
+    <main class="panel">
+        <div id="channelName" class="panel">
+            <img src="./imgs/icons/back.svg" alt="back" class="svg mobileOnly backBtn">
+            <div class="name">
+                <img src="./imgs/icons/comment-svgrepo-com.svg" alt="" class="svg">
+                <h3 class="headerFont">Channel name</h3>
+            </div>
+        </div>
+        <div id="messagesWrapper" class="panel">
+        </div>
+        <div id="animWrapper">
+            <div id="typing">
+                <img src="./imgs/icons/typing.gif">
+                <p>Typing...</p>
+            </div>
+        </div>
+    </main>
+    <div id="profilePopup" class="panel">
+        <div class="banner card"><img src="./imgs/pfp.png" alt="Profile Picture" class="pfp"></div>
+        <h1 class="headerFont">Jeven Shirrell</h1>
+        <ul class="profileSkills">
+            <li>Web development</li>
+            <li>Game development</li>
+            <li>Music production</li>
+            <li>Drumming</li>
+        </ul>
+        <div class="btns">
+            <a target="_blank" href="https://docs.google.com/document/d/1X4ucaNnFKgA3Kagi_PBIr7B_dg8y4qgdT7mXaMCG27o/edit?usp=sharing"><button class="button1">Resume</button></a>
+            <a target="_blank" href="mailto:jrslivingwaterstudios@gmail.com"><button class="button1">Contact</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

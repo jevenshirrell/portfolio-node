@@ -1,0 +1,403 @@
+/* setup */
+:root {
+    --bg: #000000;
+    --shade1: #070712;
+    --panel: #0D0D24;
+    --shade2: #181832;
+    --card: #23233F;
+    --text: #ffffff;
+    --accent: #bbbbfa;
+    --border: 2px solid rgba(255, 255, 255, .05);
+    --box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+@font-face {
+    font-family: Header;
+    src: url(./fonts/SpaceMono-Bold.ttf);
+}
+@font-face {
+    font-family: Text;
+    src: url(./fonts/RobotoMono-VariableFont_wght.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+/* defaults */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Text;
+    display: flex;
+    gap: 15px;
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    justify-content: center;
+}
+h1, h2, h3, p, li, ul {
+    margin: 0;
+}
+.headerFont {
+    font-family: Header;
+}
+.panel, .card {
+    border: var(--border);
+    box-shadow: var(--box-shadow); 
+}
+.panel {
+    background-color: var(--panel);
+    padding: 10px;
+    border-radius: 20px;
+}
+.card {
+    background-color: var(--card);
+    padding: 5px;
+    border-radius: 15px;
+}
+.link {
+    color: var(--accent);
+    text-decoration: underline;
+}
+.link:hover {
+    cursor: pointer;
+}
+.svg {
+    height: 15px;
+}
+*::-webkit-scrollbar {
+    width: 25px;
+}
+*::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px var(--card);
+    border: solid 10px transparent;
+    border-radius: 15px;
+}
+.button1 {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background-color: var(--accent);
+    border-radius: 15px;
+    padding: 5px;
+    color: var(--bg);
+    font-family: Header;
+    font-size: 1rem;
+    transition: background-color 150ms;
+}
+.button1:hover {
+    background-color: color-mix(in srgb, var(--accent), white 50%);
+    cursor: pointer;
+}
+.button2 {
+    border: 2px solid var(--accent);
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg);
+    border-radius: 15px;
+    padding: 5px;
+    color: var(--accent);
+    font-family: Header;
+    font-size: 1.5rem;
+    transition: background-color 150ms;
+}
+.button2:hover {
+    background-color: color-mix(in srgb, var(--accent), var(--bg) 75%);
+    cursor: pointer;
+}
+.pfp {
+    object-fit: cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.mobileOnly {
+    display: none;
+}
+
+/* sidebar */
+header, main {
+    border-radius: 30px !important;
+}
+header {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    background-color: var(--shade1) !important;
+    flex-shrink: 0;
+}
+/* channels */
+.channelList {
+    list-style-image: url(./imgs/icons/comment-svgrepo-com.svg);
+    list-style-position: inside;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 5px;
+    overflow-y: auto;
+}
+.channelList li {
+    background-color: var(--shade2) !important;
+    transition: background-color 150ms;
+}
+.channelList li:hover {
+    background-color: color-mix(in srgb, var(--shade2), white 5%) !important;
+    cursor: pointer;
+}
+.channelList .activeChannel {
+    background-color: color-mix(in srgb, var(--shade2), white 15%) !important;
+}
+/* mini profile */
+.profile {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+    justify-self: flex-end;
+    user-select: none;
+    transition: background-color 150ms;
+}
+.profile:hover {
+    cursor: pointer;
+    background-color: color-mix(in srgb, var(--panel), white 5%);
+}
+/* hero */
+.hero img {
+    margin-left: -11.6px;
+    width: calc(100% + 22px);
+    object-fit: cover;
+    object-position: 0 -15px;
+    mask-image: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* main content */
+main {
+    background-color: var(--shade1) !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+/* header */
+#channelName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#channelName .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#channelName .name img{
+    transform: translateY(2px);
+}
+#channelName .backBtn {
+    height: 30px;
+}
+#channelName .backBtn:hover {
+    cursor: pointer;
+}
+/* message wrapper */
+#messagesWrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+}
+/* message */
+.msg .textWrapper {
+    flex-shrink: 1;
+}
+.msg {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.msg .pfp {
+    align-self: flex-start;
+}
+.msg .thumb {
+    box-shadow: var(--box-shadow);
+    height: 200px;
+    border-radius: 15px;
+    display: block;
+    border: 2px solid var(--accent);
+}
+.msg h3 {
+    color: var(--accent);
+}
+/* contact form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#contactForm .panel{
+    border-color: var(--accent);
+    color: var(--accent);
+    font-family: Text;
+    outline: none;
+}
+#contactForm .panel::placeholder {
+    color: color-mix(in srgb, var(--accent), transparent 50%);
+}
+#contactForm .row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#contactForm textarea {
+    resize: none;
+}
+/* typing anims */
+#animWrapper {
+    display: none;
+    /* display: flex; */
+    position:absolute;
+    justify-content: space-between;
+    align-items: stretch;
+    bottom: 38px;
+    left: 353px;
+    width: calc(100% - 391px);
+}
+#typing {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    background-color: var(--bg);
+    border: 2px solid var(--accent);
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: var(--box-shadow);
+}
+#typing img {
+    height: 25px;
+    width: 55px;
+    object-fit: cover;
+    object-position: 50% calc(50% + 3px);
+}
+
+/* popup */
+#profilePopup {
+    position: absolute;
+    left: 26px;
+    bottom: 141px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+/* banner */
+.banner {
+    background-color: var(--accent) !important;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 35px;
+}
+.banner img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    transform: translateY(35px);
+    border: 5px solid var(--panel);
+}
+/* list */
+#profilePopup ul {
+    list-style-position: inside;
+    list-style-type: '- ';
+    padding: 0;
+    margin-bottom: 15px;
+}
+/* buttons */
+.btns {
+    display: flex;
+    gap: 10px;
+}
+#profilePopup button {
+    font-size: 1.25rem;
+    align-self: flex-start;
+}
+
+/* MEDIA QUERIES */
+/* mobile */
+@media (max-width: 768px) {
+    /* def */
+    html {
+        height: 100dvh;
+        /* overflow:visible; */
+    }
+    .mobileOnly {
+        display: block;
+    }
+    /* sidebar */
+    header {
+        width: 100%;
+        max-width: 400px;
+        /* display: none; */
+    }
+    .hero img {
+        height: 100px;
+        object-position: 0 -50px;
+    }
+    .name h2{
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    /* channels */
+    .channelList .activeChannel {
+        background-color: var(--shade2) !important;   
+    }
+    /* mini profile */
+    #miniProf {
+        height: 75px;
+    }
+    #miniProf .pfp {
+        height: 55px;
+        width: 55px;
+    }
+    /* popup */
+    #profilePopup {
+        bottom: 117px;
+        width: calc(100% - 52px);
+        max-width: 376px;
+        left: calc(50% - min(376px, calc(100% - 52px)) / 2);
+    }
+
+    /* messages */
+    main {
+        display: none;
+        width: 100%;
+    }
+    #channelName {
+        justify-content: space-between;
+    }
+    .msg .thumb {
+        width: 100%;
+        height: auto;
+    }
+    .msg h2 {
+        font-size: 1.25rem;
+    }
+    .msg p {
+        font-size: .8rem;
+        overflow-wrap: anywhere;
+    }
+    /* contact */
+    #contactForm .row {
+        flex-direction: column;
+    }
+    /* typing */
+    #animWrapper {
+        left: 39px;
+    }
+}
