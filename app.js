@@ -9,6 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 const route = require('./routes')(app)
 
 route('/', 'index')
+route('/timeline', 'timeline')
 route(/.*/, 'error')
 
 app.listen(PORT, () => {

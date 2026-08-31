@@ -11,5 +11,5 @@ A version of my portfolio website packaged in a node server
 
 # Routes
 - / - index.html (main page)
-- / - .html ()
+- /timeline - timeline.html (timeline page)
 - /.*/ - error.html (404 page)
