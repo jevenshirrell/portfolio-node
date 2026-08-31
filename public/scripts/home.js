@@ -1,6 +1,7 @@
 let channels = {
     "Home":[
         '<h2>Welcome to my portfolio website!</h2><p>You can use the channels on the left to navigate through different sections. If you want a quick overview, click my profile on the bottom of the channel list.</p>', 
+        '<p>If you want to see a full timeline of my experience, projects, certifications, and education, you can go <a href="/timeline">here</a></p>', 
     ],
     "About Me":[
         "<p>My name is Jeven Shirrell, and I'm currently a junior in high school. My main hobbies are drums, game development and music production</p>",

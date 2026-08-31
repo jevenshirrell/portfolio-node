@@ -195,7 +195,7 @@ main {
     width: 100px;
     border-radius: 100%;
     transform: translateY(35px);
-    border: 5px solid var(--panel);
+    border: 7.5px solid var(--panel);
 }
 /* list */
 #profilePopup ul {
@@ -207,6 +207,7 @@ main {
 /* buttons */
 .btns {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 #profilePopup button {
