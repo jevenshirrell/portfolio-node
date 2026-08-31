@@ -1,6 +1,6 @@
 const path = require('path')
 
-// factory function - called with the app preloaded
+// factory function - called with the app already passed
 module.exports = app => {
     return (url, file) => {
         app.get(url, (req,res) => {

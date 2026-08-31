@@ -1,5 +1,5 @@
 # Portfolio (Node Server)
-A version of my portfolio website packaged in a node server
+A version of my portfolio website packaged in an express node server
 
 # Deployment
 1. Install dependencies
@@ -13,3 +13,6 @@ A version of my portfolio website packaged in a node server
 - / - index.html (main page)
 - /timeline - timeline.html (timeline page)
 - /.*/ - error.html (404 page)
+
+# Extra Credit Completed
+- Custom 404 page
