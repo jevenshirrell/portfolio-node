@@ -3,10 +3,9 @@ A version of my portfolio website packaged in an express node server
 
 # Deployment
 1. Install dependencies
-    - express:\
-    ```npm i express```
+```npm install```
 2. Start server\
-```npm run start```
+```npm start```
     - Server will run on http://localhost:3000
 
 # Routes
