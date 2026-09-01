@@ -42,7 +42,7 @@ body {
     gap: 5px;
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    max-width: 75%;
 }
 .event:hover, .year:hover {
     background-color: color-mix(in srgb, var(--card), white 5%);
@@ -86,4 +86,16 @@ body {
 }
 .right {
     align-self: flex-end;
+}
+
+/* MEDIA QUERIES */
+/* mobile */
+@media (max-width: 768px) {
+    #tlWrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    .event {
+        max-width: 100%;
+    }
 }
